@@ -1,0 +1,8 @@
+[package]
+name = "lint-tool"
+publish = false
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+xshell = "0.1"

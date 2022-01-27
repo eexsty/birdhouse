@@ -1,0 +1,14 @@
+[package]
+name = "game-components"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+license-file = "../LICENSE"
+authors = ["Pedro Henrique <eu@peedro.xyz>"]
+homepage = "https://git.exst.fun/birdhouse"
+publish = false
+
+[dependencies]
+bevy = { version = "0.6", features = ["serialize"] }
+serde = { version = "1", features = ["derive"] }
+shared = { path = "../shared" }

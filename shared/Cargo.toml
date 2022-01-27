@@ -1,0 +1,12 @@
+[package]
+name = "shared"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+license-file = "../LICENSE"
+authors = ["Pedro Henrique <eu@peedro.xyz>"]
+homepage = "https://git.exst.fun/birdhouse"
+publish = false
+
+[dependencies]
+bevy = "0.6"

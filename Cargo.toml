@@ -1,0 +1,35 @@
+[package]
+name = "bevy_template"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+license-file = "LICENSE"
+authors = ["Pedro Henrique <eu@peedro.xyz>"]
+keywords = ["bevy", "game"]
+homepage = "https://git.exst.fun/birdhouse"
+exclude = ["assets/**/*", "tools/**/*", ".github/**/*"]
+publish = false
+
+[workspace]
+resolver = "2"
+members = [
+    "./",
+    "./shared",
+    "./mechanics",
+    "./core-plugins/input",
+    "./core-plugins/data",
+    "./components",
+    "./tools/lint",
+]
+
+[[bin]]
+name = "bevy_template_bin"
+path = "./src/main.rs"
+
+[dependencies]
+bevy = { version = "0.6", features = ["serialize"] }
+shared = { path = "./shared" }
+game-components = { path = "./components" }
+game-mechanics = { path = "./mechanics" }
+core-input-plugin = { path = "./core-plugins/input" }
+core-data-plugin = { path = "./core-plugins/data" }
