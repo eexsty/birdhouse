@@ -11,3 +11,4 @@ publish = false
 [dependencies]
 bevy = { version = "0.6", features = ["serialize"] }
 serde = { version = "1", features = ["derive"] }
+shared = { path = "../../shared" }

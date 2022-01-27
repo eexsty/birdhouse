@@ -7,3 +7,11 @@ license-file = "../LICENSE"
 authors = ["Pedro Henrique <eu@peedro.xyz>"]
 homepage = "https://git.exst.fun/birdhouse"
 publish = false
+
+[dependencies]
+bevy = "0.6"
+shared = { path = "../../shared" }
+strum = "0.23"
+strum_macros = "0.23"
+ezinput = "0.2"
+ezinput_macros = "0.2"
